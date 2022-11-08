@@ -1,0 +1,45 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {   "fullUrl": "urn:uuid:patient",
+
+            "resource":{
+                "resourceType": "Patient",
+                "name": [{
+                    "given": ["Gowtham","b"]
+                }]
+            },
+
+            "request": {
+                "method": "PUT",
+                "url": "/Patient?id=6969079"
+            }
+            
+        },
+
+        {
+            "resource":{
+                "resourceType": "Observation",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "15074-8"
+                        }
+                    ]
+                },
+                "subject": {
+                    "type": "Patient",
+                    "reference": "urn:uuid:patient"
+                },
+                "valueInteger": 40
+
+            },
+            "request": {
+                "method": "POST",
+                "url": "/Observation"
+            }
+        }
+    ]
+}
