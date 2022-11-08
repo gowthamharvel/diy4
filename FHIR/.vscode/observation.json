@@ -1,0 +1,24 @@
+{
+    "resourceType": "Observation",
+    "status": "corrected",
+    "id": "6968972",
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "15074-8",
+                "display": "Glucose in blood"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/6968933",
+        "display": "Gowtham Balasubramaniam"
+    },
+    "valueQuantity": {
+        "value": 4.0,
+        "unit": "mmol/l",
+        "system": "http://unitofmeasure.org",
+        "code": "mmol/l"
+    }
+}

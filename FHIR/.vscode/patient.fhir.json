@@ -1,0 +1,33 @@
+{
+    "resourceType": "Patient",
+    "meta": {
+        "profile": ["https://hapi.fhir.org/baseR4/StructureDefinition/4"]
+    },
+    "name": [{
+        "given": ["Gowtham"],
+        "family": "Balasubramaniam"
+    }],
+    "gender": "male",
+    "birthDate": "1996-03-02",
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "7010762890"
+        },
+        {
+            "system": "email",
+            "value": "gowtham@mail.com"
+        }
+
+    ],
+    "address": [{
+        "_line": [
+            "79 Main Road"
+        ],
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "postalCode": "641668"
+    }]
+
+}
