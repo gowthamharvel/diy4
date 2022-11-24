@@ -83,6 +83,14 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "search Patient",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			]
 		},
