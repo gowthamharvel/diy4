@@ -85,6 +85,27 @@
 					"response": []
 				},
 				{
+					"name": "Get Patient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://hapi.fhir.org/baseR4/Patient",
+							"protocol": "https",
+							"host": [
+								"hapi",
+								"fhir",
+								"org"
+							],
+							"path": [
+								"baseR4",
+								"Patient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "search Patient",
 					"request": {
 						"method": "GET",
@@ -95,25 +116,17 @@
 			]
 		},
 		{
-			"name": "Get Patient",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://hapi.fhir.org/baseR4/Patient",
-					"protocol": "https",
-					"host": [
-						"hapi",
-						"fhir",
-						"org"
-					],
-					"path": [
-						"baseR4",
-						"Patient"
-					]
+			"name": "Capability Statement",
+			"item": [
+				{
+					"name": "Get Capability Statement",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
 			"name": "validate profile",
