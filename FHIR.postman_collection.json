@@ -49,7 +49,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"resourceType\": \"StructureDefinition\",\r\n  \"url\": \"http://gowtham.org/fhir/StructureDefinition/gowtham-def\",\r\n  \"name\": \"GowthamDefOfPatient\",\r\n  \"status\": \"draft\",\r\n  \"fhirVersion\": \"4.0.1\",\r\n  \"kind\": \"resource\",\r\n  \"abstract\": false,\r\n  \"type\": \"Patient\",\r\n  \"baseDefinition\": \"http://hl7.org/fhir/StructureDefinition/Patient\",\r\n  \"derivation\": \"constraint\",\r\n  \"differential\": {\r\n    \"element\": [\r\n      {\r\n        \"id\": \"Patient.gender\",\r\n        \"path\": \"Patient.gender\",\r\n        \"min\": 1\r\n      }\r\n    ]\r\n  }\r\n}",
+							"raw": "{\r\n  \"resourceType\": \"StructureDefinition\",\r\n  \"url\": \"https://FHIR-demo.org/fhir/StructureDefinition/basicPatientProfile\",\r\n  \"name\": \"basicPatientProfile\",\r\n  \"status\": \"draft\",\r\n  \"fhirVersion\": \"4.0.1\",\r\n  \"kind\": \"resource\",\r\n  \"abstract\": false,\r\n  \"type\": \"Patient\",\r\n  \"baseDefinition\": \"http://hl7.org/fhir/StructureDefinition/Patient\",\r\n  \"derivation\": \"constraint\",\r\n  \"differential\": {\r\n    \"element\": [\r\n      {\r\n        \"id\": \"Patient.identifier\",\r\n        \"path\": \"Patient.identifier\",\r\n        \"min\": 1\r\n      },\r\n      {\r\n        \"id\": \"Patient.name\",\r\n        \"path\": \"Patient.name\",\r\n        \"min\": 1,\r\n        \"max\": \"1\"\r\n      },\r\n      {\r\n        \"id\": \"Patient.telecom\",\r\n        \"path\": \"Patient.telecom\",\r\n        \"min\": 1,\r\n        \"max\": \"1\"\r\n      },\r\n      {\r\n        \"id\": \"Patient.gender\",\r\n        \"path\": \"Patient.gender\",\r\n        \"min\": 1\r\n      }\r\n    ]\r\n  }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -79,8 +79,30 @@
 				{
 					"name": "post patient",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"resourceType\": \"Patient\",\r\n    \r\n    \"meta\": {\r\n        \r\n        \"profile\": [\r\n            \"http://gowtham.org/fhir/StructureDefinition/gowtham-def\"\r\n        ]\r\n        \r\n    },\r\n    \"text\": {\r\n    \"status\": \"generated\",\r\n    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">\\n\\t\\t\\t<table>\\n\\t\\t\\t\\t<tbody>\\n\\t\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t\\t<td>Name</td>\\n\\t\\t\\t\\t\\t\\t<td>Peter James \\n              <b>Chalmers</b> (&quot;Jim&quot;)\\n            </td>\\n\\t\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t\\t<td>Address</td>\\n\\t\\t\\t\\t\\t\\t<td>534 Erewhon, Pleasantville, Vic, 3999</td>\\n\\t\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t\\t<td>Contacts</td>\\n\\t\\t\\t\\t\\t\\t<td>Home: unknown. Work: (03) 5555 6473</td>\\n\\t\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t\\t<td>Id</td>\\n\\t\\t\\t\\t\\t\\t<td>MRN: 12345 (Acme Healthcare)</td>\\n\\t\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t</tbody>\\n\\t\\t\\t</table>\\n\\t\\t</div>\"\r\n  },\r\n\r\n    \"name\": [{\r\n        \"use\": \"official\",\r\n        \"given\": [\"Gowtham\"],\r\n        \"family\": \"Balasbramaniam\"\r\n    },\r\n    {\r\n        \"use\":\"nickname\",\r\n        \"given\": [\"Gowtham\",\"B\"],\r\n        \"family\": \"Bal\"\r\n        \r\n    }\r\n    ],\r\n\r\n    \"gender\": \"male\",\r\n    \"telecom\": [\r\n        {\r\n        \"system\": \"phone\",\r\n        \"value\": \"9750542245\",\r\n        \"use\": \"mobile\"\r\n    },\r\n    {\r\n        \"system\": \"email\",\r\n        \"value\": \"gowtham@gmail\",\r\n        \"use\": \"home\"\r\n    }\r\n],\r\n    \"birthDate\": \"1974-12-25\",\r\n    \"_birthDate\": {\r\n        \"extension\": [\r\n            {\r\n                \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",\r\n                \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hapi.fhir.org/baseR4/Patient",
+							"protocol": "https",
+							"host": [
+								"hapi",
+								"fhir",
+								"org"
+							],
+							"path": [
+								"baseR4",
+								"Patient"
+							]
+						}
 					},
 					"response": []
 				},
@@ -109,6 +131,80 @@
 					"name": "search Patient",
 					"request": {
 						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://hapi.fhir.org/baseR4/Observation?_include=Observation:subject&_count=1",
+							"protocol": "https",
+							"host": [
+								"hapi",
+								"fhir",
+								"org"
+							],
+							"path": [
+								"baseR4",
+								"Observation"
+							],
+							"query": [
+								{
+									"key": "_include",
+									"value": "Observation:subject"
+								},
+								{
+									"key": "_count",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Patient",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://hapi.fhir.org/baseR4/Patient",
+							"protocol": "https",
+							"host": [
+								"hapi",
+								"fhir",
+								"org"
+							],
+							"path": [
+								"baseR4",
+								"Patient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://hapi.fhir.org/baseR4/Patient/7162469",
+							"protocol": "https",
+							"host": [
+								"hapi",
+								"fhir",
+								"org"
+							],
+							"path": [
+								"baseR4",
+								"Patient",
+								"7162469"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patient Hisory",
+					"request": {
+						"method": "GET",
 						"header": []
 					},
 					"response": []
@@ -122,7 +218,55 @@
 					"name": "Get Capability Statement",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://hapi.fhir.org/baseR4/metadata/",
+							"protocol": "https",
+							"host": [
+								"hapi",
+								"fhir",
+								"org"
+							],
+							"path": [
+								"baseR4",
+								"metadata",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bundles",
+			"item": [
+				{
+					"name": "Bundle-transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"resourceType\": \"Bundle\",\r\n    \"type\": \"transaction\",\r\n    \"entry\": [\r\n        {   \"fullUrl\": \"urn:uuid:patient\",\r\n            \"resource\":{\r\n                \"resourceType\": \"Patient\",\r\n                \"name\": [{\r\n                    \"given\": [\"Gowtham\",\"b\"]\r\n                }]\r\n            },\r\n            \"request\": {\r\n                \"method\": \"PUT\",\r\n                \"url\": \"/Patient?name=Gowtham\"\r\n            }\r\n            \r\n        },\r\n        {\r\n            \"resource\":{\r\n                \"resourceType\": \"Observation\",\r\n                \"code\": {\r\n                    \"coding\": [\r\n                        {\r\n                            \"system\": \"http://loinc.org\",\r\n                            \"code\": \"15074-8\"\r\n                        }\r\n                    ]\r\n                },\r\n                \"subject\": {\r\n                    \"type\": \"Patient\",\r\n                    \"reference\": \"urn:uuid:patient\"\r\n                },\r\n                \"valueInteger\": 40\r\n            },\r\n            \"request\": {\r\n                \"method\": \"POST\",\r\n                \"url\": \"/Observation\"\r\n            }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://hapi.fhir.org/baseR4",
+							"protocol": "https",
+							"host": [
+								"hapi",
+								"fhir",
+								"org"
+							],
+							"path": [
+								"baseR4"
+							]
+						}
 					},
 					"response": []
 				}
@@ -153,6 +297,41 @@
 					"path": [
 						"baseR4",
 						"Patient",
+						"$validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validate profile Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"resourceType\": \"Patient\",\r\n    \r\n    \"meta\": {\r\n        \r\n        \"profile\": [\r\n            \"http://gowtham.org/fhir/StructureDefinition/gowtham-def\"\r\n        ]\r\n        \r\n    },\r\n    \"name\": [{\r\n        \"use\": \"official\",\r\n        \"given\": [\"Gowtham\"],\r\n        \"family\": \"Balasbramaniam\"\r\n    },\r\n    {\r\n        \"use\":\"nickname\",\r\n        \"given\": [\"Gowtham\",\"B\"],\r\n        \"family\": \"Bal\"\r\n        \r\n    }\r\n    ],\r\n\r\n    \"gender\": \"male\",\r\n    \"telecom\": [\r\n        {\r\n        \"system\": \"phone\",\r\n        \"value\": \"9750542245\",\r\n        \"use\": \"mobile\"\r\n    },\r\n    {\r\n        \"system\": \"email\",\r\n        \"value\": \"gowtham@gmail\",\r\n        \"use\": \"home\"\r\n    }\r\n],\r\n    \"birthDate\": \"1974-12-25\",\r\n    \"_birthDate\": {\r\n        \"extension\": [\r\n            {\r\n                \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",\r\n                \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hapi.fhir.org/baseR4/Patient/7054531/$validate",
+					"protocol": "https",
+					"host": [
+						"hapi",
+						"fhir",
+						"org"
+					],
+					"path": [
+						"baseR4",
+						"Patient",
+						"7054531",
 						"$validate"
 					]
 				}
