@@ -27,7 +27,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://hapi.fhir.org/baseR4/StructureDefinition",
+							"raw": "https://hapi.fhir.org/baseR4/StructureDefinition?url:text=gowtham",
 							"protocol": "https",
 							"host": [
 								"hapi",
@@ -37,6 +37,12 @@
 							"path": [
 								"baseR4",
 								"StructureDefinition"
+							],
+							"query": [
+								{
+									"key": "url:text",
+									"value": "gowtham"
+								}
 							]
 						}
 					},
@@ -77,6 +83,78 @@
 			"name": "Patient",
 			"item": [
 				{
+					"name": "Bulk data extract",
+					"item": [
+						{
+							"name": "Bulk data Patient",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Prefer",
+										"value": "respond-async",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/fhir+json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://hapi.fhir.org/baseR4/Patient/$export?_since=2021-07-01T00:00:00Z",
+									"protocol": "https",
+									"host": [
+										"hapi",
+										"fhir",
+										"org"
+									],
+									"path": [
+										"baseR4",
+										"Patient",
+										"$export"
+									],
+									"query": [
+										{
+											"key": "_since",
+											"value": "2021-07-01T00:00:00Z"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Bulk data status",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://hapi.fhir.org/baseR4/Patient/$export-poll-status?_jobId=1106dde3-b83a-4ad3-9978-bb4c29e12dab",
+									"protocol": "http",
+									"host": [
+										"hapi",
+										"fhir",
+										"org"
+									],
+									"path": [
+										"baseR4",
+										"Patient",
+										"$export-poll-status"
+									],
+									"query": [
+										{
+											"key": "_jobId",
+											"value": "1106dde3-b83a-4ad3-9978-bb4c29e12dab"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
 					"name": "post patient",
 					"request": {
 						"method": "POST",
@@ -112,7 +190,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://hapi.fhir.org/baseR4/Patient",
+							"raw": "https://hapi.fhir.org/baseR4/Patient/7054531",
 							"protocol": "https",
 							"host": [
 								"hapi",
@@ -121,7 +199,8 @@
 							],
 							"path": [
 								"baseR4",
-								"Patient"
+								"Patient",
+								"7054531"
 							]
 						}
 					},
@@ -163,8 +242,17 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"resourceType\": \"Patient\",\r\n    \"id\": 7054531,\r\n    \"meta\": {\r\n        \r\n        \"profile\": [\r\n            \"http://gowtham.org/fhir/StructureDefinition/gowtham-def\"\r\n        ]\r\n        \r\n    },\r\n    \"text\": {\r\n    \"status\": \"generated\",\r\n    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">\\n\\t\\t\\t<table>\\n\\t\\t\\t\\t<tbody>\\n\\t\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t\\t<td>Name</td>\\n\\t\\t\\t\\t\\t\\t<td>Peter James \\n              <b>Chalmers</b> (&quot;Jim&quot;)\\n            </td>\\n\\t\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t\\t<td>Address</td>\\n\\t\\t\\t\\t\\t\\t<td>534 Erewhon, Pleasantville, Vic, 3999</td>\\n\\t\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t\\t<td>Contacts</td>\\n\\t\\t\\t\\t\\t\\t<td>Home: unknown. Work: (03) 5555 6473</td>\\n\\t\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t\\t<td>Id</td>\\n\\t\\t\\t\\t\\t\\t<td>MRN: 12345 (Acme Healthcare)</td>\\n\\t\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t</tbody>\\n\\t\\t\\t</table>\\n\\t\\t</div>\"\r\n  },\r\n\r\n    \"name\": [{\r\n        \"use\": \"official\",\r\n        \"given\": [\"Gowtham\"],\r\n        \"family\": \"Balasbramaniam\"\r\n    },\r\n    {\r\n        \"use\":\"nickname\",\r\n        \"given\": [\"Gowtham\",\"B\"],\r\n        \"family\": \"Bal\"\r\n        \r\n    }\r\n    ],\r\n\r\n    \"gender\": \"male\",\r\n    \"telecom\": [\r\n        {\r\n        \"system\": \"phone\",\r\n        \"value\": \"9750542245\",\r\n        \"use\": \"mobile\"\r\n    },\r\n    {\r\n        \"system\": \"email\",\r\n        \"value\": \"gowtham@gmail\",\r\n        \"use\": \"home\"\r\n    }\r\n],\r\n    \"birthDate\": \"1974-11-25\",\r\n    \"_birthDate\": {\r\n        \"extension\": [\r\n            {\r\n                \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",\r\n                \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "https://hapi.fhir.org/baseR4/Patient",
+							"raw": "https://hapi.fhir.org/baseR4/Patient/7054531",
 							"protocol": "https",
 							"host": [
 								"hapi",
@@ -173,7 +261,8 @@
 							],
 							"path": [
 								"baseR4",
-								"Patient"
+								"Patient",
+								"7054531"
 							]
 						}
 					},

@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "467837ce-34d5-46da-9f25-584c869ba864",
+		"name": "Cigna-FHIR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4949594"
+	},
+	"item": [
+		{
+			"name": "Capability Statement Copy",
+			"item": [
+				{
+					"name": "Get Capability Statement",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://p-hi2.digitaledge.cigna.com/ProviderDirectory/v1/metadata",
+							"protocol": "https",
+							"host": [
+								"p-hi2",
+								"digitaledge",
+								"cigna",
+								"com"
+							],
+							"path": [
+								"ProviderDirectory",
+								"v1",
+								"metadata"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Authorize",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "5ynthU5er1",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "syntheticuser01",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://r-hi2.cigna.com/mga/sps/oauth/oauth20/authorize?nonce=gowtham&response_type=code&state=123456&client_id=b4e4ba96-09c3-417b-99d2-6ca6a83bd58b&scope=patient/*.read openid fhirUser&redirect_uri=https://example.com",
+							"protocol": "https",
+							"host": [
+								"r-hi2",
+								"cigna",
+								"com"
+							],
+							"path": [
+								"mga",
+								"sps",
+								"oauth",
+								"oauth20",
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "nonce",
+									"value": "gowtham"
+								},
+								{
+									"key": "response_type",
+									"value": "code"
+								},
+								{
+									"key": "state",
+									"value": "123456"
+								},
+								{
+									"key": "client_id",
+									"value": "b4e4ba96-09c3-417b-99d2-6ca6a83bd58b"
+								},
+								{
+									"key": "scope",
+									"value": "patient/*.read openid fhirUser"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://example.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n  \"grant_type\": \"authorization_code\",\r\n  \"code\": \"VW4OamPJEsu9jzWemfQ5kgzCku8Aou\",\r\n  \"redirect_uri\": \"https://example.com\",\r\n  \"client_id\": \"b4e4ba96-09c3-417b-99d2-6ca6a83bd58b\",\r\n  \"client_secret\": \"6ae4c012-c73e-48c6-a73b-b8b97da4a064\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://r-hi2.cigna.com/mga/sps/oauth/oauth20/token?code=VW4OamPJEsu9jzWemfQ5kgzCku8Aou&grant_type=authorization_code&client_id=b4e4ba96-09c3-417b-99d2-6ca6a83bd58b&client_secret=6ae4c012-c73e-48c6-a73b-b8b97da4a064&redirect_uri=https://example.com",
+							"protocol": "https",
+							"host": [
+								"r-hi2",
+								"cigna",
+								"com"
+							],
+							"path": [
+								"mga",
+								"sps",
+								"oauth",
+								"oauth20",
+								"token"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "VW4OamPJEsu9jzWemfQ5kgzCku8Aou"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code"
+								},
+								{
+									"key": "client_id",
+									"value": "b4e4ba96-09c3-417b-99d2-6ca6a83bd58b"
+								},
+								{
+									"key": "client_secret",
+									"value": "6ae4c012-c73e-48c6-a73b-b8b97da4a064"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://example.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
