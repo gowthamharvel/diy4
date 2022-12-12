@@ -170,7 +170,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzA1OTgyMTQsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzA2MDAwMTMsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.jfFJEyzq-clZdPReYiSNSqrEJ_TKVdUI1VCdeS1qpENRrCJ9u2nqQogHP9lcKJqWzbN7VsT-MU5rjT5Crb5bzIouchaXHmb4DeeGBYZzPWf18FHbrjbVtuk8jUpCN-foYsvaq_xWtE0EV47cbSVDTopiMoXtzcJm9nVWFcWgZYBHOK2XJXjKj02YvQWO_cT0zDGi9HnhjNuXJpJymAOXhOPZ7Dzpo0xo8-rGn5hjpnyolFHzbcEyZ4MxGN5WIk3lNChJGVkTAjXFRwYkp1kPoGCiPhuH7N-MzP1zYCwGXk-l8TCnYNYfvSNH7cJQV9-N9EXTKyjHo0cg-WT0BRj5wg",
+									"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzA4MzczODUsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzA4MzkxODUsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.psh2L1x9WEkEWaKTPJZpCDViPoWqm0NgXHvCx7RWavZJ-16cPpkrvuw5QuojCnHsirFwwqNdJ652hLQ9KjbA9z9YvrzqhPx231hx9UZCOGwJK1Ty_YaVuP-Mdvf0GARzlOYIid7JwU_nIkJr806UaUpASMmf6MEI3ODWjx6KxpLnDh2Us7APjDtB1TwR5RYNyBUi5cV6JVTIVZCrJWIus0gbukRirIj7jElRKwZkpi78xtZjj34igtpjV3bHXmrpbtpKKPBWU4Scp7uSC_nqehW3pazXQZwfaoINDtbKmthfhjmUhYuq0YI66EL_s3C2_eNhVJDWKHJqFiU9tg_fIg",
 									"type": "string"
 								}
 							]
@@ -178,13 +178,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{cigna_fhir_api\n}}/Patient/gov-8972693f-069b-4714-82f9-f805ebf7800f",
+							"raw": "{{cigna_fhir_api\n}}/Patient/",
 							"host": [
 								"{{cigna_fhir_api\n}}"
 							],
 							"path": [
 								"Patient",
-								"gov-8972693f-069b-4714-82f9-f805ebf7800f"
+								""
 							]
 						}
 					},
@@ -198,16 +198,70 @@
 				{
 					"name": "Get EOB",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzA4MzczODUsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzA4MzkxODUsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.psh2L1x9WEkEWaKTPJZpCDViPoWqm0NgXHvCx7RWavZJ-16cPpkrvuw5QuojCnHsirFwwqNdJ652hLQ9KjbA9z9YvrzqhPx231hx9UZCOGwJK1Ty_YaVuP-Mdvf0GARzlOYIid7JwU_nIkJr806UaUpASMmf6MEI3ODWjx6KxpLnDh2Us7APjDtB1TwR5RYNyBUi5cV6JVTIVZCrJWIus0gbukRirIj7jElRKwZkpi78xtZjj34igtpjV3bHXmrpbtpKKPBWU4Scp7uSC_nqehW3pazXQZwfaoINDtbKmthfhjmUhYuq0YI66EL_s3C2_eNhVJDWKHJqFiU9tg_fIg",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{cigna_fhir_api\n}}/ExplanationOfBenefit?_id=ifp-05ba16485f6baeb45115f2a379983a41&_include=ExplanationOfBenefit:",
+							"host": [
+								"{{cigna_fhir_api\n}}"
+							],
+							"path": [
+								"ExplanationOfBenefit"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "ifp-05ba16485f6baeb45115f2a379983a41"
+								},
+								{
+									"key": "_include",
+									"value": "ExplanationOfBenefit:"
+								}
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "Get EOB for patient",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJqa3UiOiJodHRwczovL3ItaGkyLmNpZ25hLmNvbS9tZ2Evc3BzL29hdXRoL29hdXRoMjAvandrcy9oaTJfY2xpZW50X2RlZiIsImtpZCI6Im16MUUtUFpuM1E1X2JxTmpGdC1GUklFeXRwM1IxeVpSMG5fVjQ0czRmZDgiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzA4MzA0MTAsInN1YiI6IkEwMDAwMDAwMDAwMDAwMSIsImF1ZCI6ImhpMl9jbGllbnQiLCJleHAiOjE2NzA4MzIyMTAsImlzcyI6InItaGkyLmNpZ25hLmNvbSIsImh0dHBzOi8vaGkyLmNpZ25hLmNvbSI6eyJlbnRlcnByaXNlSWQiOiJBMDAwMDAwMDAwMDAwMDEiLCJhdXRob3JpemVyRW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwicm9sZSI6IlNFTEYifSwiY2lnbmEuZW50ZXJwcmlzZUlkIjoiQTAwMDAwMDAwMDAwMDAxIiwiY2lnbmEuYXV0aG9yaXplckVudGVycHJpc2VJZCI6IkEwMDAwMDAwMDAwMDAwMSIsImNpZ25hLnJvbGUiOiJTRUxGIiwiZW50LnZlciI6MSwiZW50LmFwcE5hbWUiOiJDaWduYSBISTIiLCJlbnQudG9rZW5UeXBlIjoidXNlciIsImVudC5lbnYiOiJyZWwiLCJzY29wZSI6InBhdGllbnQvKi5yZWFkIG9wZW5pZCBmaGlyVXNlciIsImNsaWVudCI6ImQzNGMxMDkwLWU1NjgtNDJkNy1hZDMxLWJiYTFkMzk5ZGMzMiJ9.k0_Pl4VjIESoWgPdTwZuD14xOHGcxlB4ymE2sv9afWSmQH4xye26pYAjcN1sWQiDmiY4P-6FtlcgZ6h--Gcm04WJPXa7cGUeeFeWAXaKU7N8cY6_nNbzyJ_Hl_bwlFlg6X1e4RVkkIS0FC-jAMgocOTuJiKq9L9xL2NlMYxTAQ60T8DgfjJPUv7gY4HwOrX5TFC1kqQcK4OH6qFzT6_uQqP6ZuduEfc_hhC8hYqOP-EePs-R9gJzXWrgEHzqj2oqSmKU6I3cjUM8POmbDdGVQEFURqvR_DgTiemmj7jbc-xBHSmCU7_2_xAsiPhcorpIFHLOcml1HCyAioA8z0Vk9w",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{cigna_fhir_api\n}}/ExplanationOfBenefit?patient=gov-8972693f-069b-4714-82f9-f805ebf7800f",
+							"host": [
+								"{{cigna_fhir_api\n}}"
+							],
+							"path": [
+								"ExplanationOfBenefit"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "gov-8972693f-069b-4714-82f9-f805ebf7800f"
+								}
+							]
+						}
 					},
 					"response": []
 				}
